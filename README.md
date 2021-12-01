@@ -14,4 +14,4 @@ txt file content after encryption
 
 Logs from the execution of the encryption program 10 random files with a random algorithm.
 
-![Screenshot_33](https://user-images.githubusercontent.com/56437740/144250448-5a17e644-3040-4242-96db-de6c988b128e.png)
+![Screenshot_33](https://user-images.githubusercontent.com/56437740/144250603-f244f222-1cad-4b1d-8bdc-3df7ee1c84f0.png)
