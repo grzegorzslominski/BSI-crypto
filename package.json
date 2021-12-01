@@ -1,0 +1,38 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "doc": "jsdoc -c jsdoc.json",
+  "keywords": [],
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "eslint-plugin-jest": "^25.2.4",
+    "jsdocs": "^1.0.0",
+    "mathjs": "^10.0.0",
+    "prompt-sync": "^4.2.0",
+    "rc5": "^0.2.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "jsdoc": "^3.6.7",
+    "prettier": "^2.4.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  }
+}
