@@ -8,6 +8,7 @@ import LoadingButton from '../../../../UI/LoadingButton/LoadingButton';
 import axios from '../../../../axios';
 import useAuth from '../../../../hooks/useAuth';
 import helpersAlgorithm from '../../../../algorithm/helpersAlgorithm';
+import objectToArrayWithId from '../../../../helpers/objects';
 
 const AddContent = function () {
   const [auth] = useAuth();
@@ -49,6 +50,20 @@ const AddContent = function () {
     } catch (ex) {
       console.log(ex.response);
     }
+
+    const res = await axios.get('users.json');
+    const users = objectToArrayWithId(res.data).filter((m) => m.email === auth.email);
+    if (!users.length > 0) {
+      try {
+        await axios.post('/users.json', {
+          email: auth.email,
+          type: 'google-account'
+        });
+      } catch (ex) {
+        console.log(ex.response);
+      }
+    }
+
     history.push('.profile/examples');
     setLoading(false);
   };

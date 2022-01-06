@@ -1,0 +1,11 @@
+.example{
+    border:1px solid #cdcdcd;
+    margin-bottom: 20px;
+    background-color: rgb(218, 219, 201);
+    border-radius: 10px;
+    background-size: 10%;
+}
+
+h5{
+    text-align: center;
+}
