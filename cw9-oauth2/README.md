@@ -5,3 +5,5 @@ To start the application, use the following commands:
 - npm start
 - node server.js
 
+In order to send messages, you must create an account and log in.
+The possibility of sending messages will appear after logging in in the "Profile" tab.
